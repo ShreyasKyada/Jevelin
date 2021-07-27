@@ -1,0 +1,75 @@
+
+@media screen and (max-width: 1008px) {
+    .navbar::before {
+        height: 825px;
+    }
+    .navbar {
+        display: block;
+        height: auto;
+    }
+    .logo-container {
+        width: 70%;
+        padding: 10px 0px 0px 30px;
+    }
+    .hamburge {
+        visibility: visible;
+    }
+    .nav-items, .nav-items ul {
+        flex-direction: column;
+    }
+    .nav-items {
+        width: 100%;
+        background-color: #232323;
+        position: absolute;
+        z-index: 1;
+        height: 0px;
+        visibility: hidden;
+        transition: all .5s;
+    }
+    .nav-items ul {
+        visibility: hidden;
+    }
+    .nav-items.click {
+        height: 434px;
+        visibility: visible;
+    }
+    .nav-items.click ul {
+        transition-delay: .28s;
+        visibility: visible;
+    }
+    .nav-items.click .nav-btn {
+        transition-delay: .3s;
+    }
+    .nav-items.close ul {
+        visibility: hidden;
+    }
+    .nav-items.close {
+        height: 0px;
+    }
+    .nav-items.close .nav-btn {
+        visibility: hidden;
+    }
+    .nav-items ul li {
+        padding: 20px;
+        border-bottom: 2px solid #2e2e2e;
+    }
+    .nav-items .nav-btn {
+        margin: 0px 20px 20px 20px;
+    }
+    .active {
+        border: none;
+    }
+    .main-text-1 {
+        font-size: 18px;
+    }
+    .main-text-2 {
+        font-size: 48px;
+    }
+    .home-text {
+        padding-top: 16.5%;
+    }
+    .home-card-container {
+        height: 30%;
+        padding: 0px 30px;
+    }
+}

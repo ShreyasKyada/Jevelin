@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    color: white;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.nav-items ul {
+    display: flex;
+    margin: 20px;
+}
+
+.nav-items ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo-container {
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.logo {
+    background: url('../Images/jevelin_logo.png') no-repeat;
+    background-position: left;
+    height: 30px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.nav-items {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-btn {
+    margin: 0px 50px 0px 0px;
+    width: 153px;
+    height: 50px;
+    background-color: #2d1dff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #2d1dff;
+}
+
+.hamburge {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#nav-line-1, #nav-line-2 {
+    background-color: white;
+    height: 2px;
+    width: 25px;
+    border-radius: 3px;
+    position: absolute;
+    transition: transform .5s;
+}
+
+#nav-line-1::before, #nav-line-1::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 25px;
+    border-radius: 3px;
+    transition: transform .5s;
+}
+
+#nav-line-1::after {
+    transform: translateY(8px);
+}
+
+#nav-line-1::before {
+    transform: translateY(-8px);
+}
+
+.hamburge.click #nav-line-1::after, .hamburge.click #nav-line-1::before {
+    transform: translateY(0px);
+}
+
+.hamburge.click #nav-line-1 {
+    transition-delay: .5s;
+    transform: rotateZ(45deg);
+}
+
+.hamburge.click #nav-line-2 {
+    transition-delay: .5s;
+    transform: rotateZ(-45deg);
+}
+
+.hamburge.close #nav-line-1 {
+    transform: rotateZ(0deg);
+}
+
+.hamburge.close #nav-line-2 {
+    transform: rotateZ(0deg);
+}
+
+.hamburge.close #nav-line-1::after {
+    transition-delay: .5s;
+    transform: translateY(8px);
+}
+
+.hamburge.close #nav-line-1::before {
+    transition-delay: .5s;
+    transform: translateY(-8px);
+}

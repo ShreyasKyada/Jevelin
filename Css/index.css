@@ -1,0 +1,57 @@
+@import url(home.css);
+@import url(navbar.css);
+@import url(Responsive.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-page {
+    color: white;
+    font-size: 13px;
+    padding: 13px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-page-info {
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+}
+
+.top-page-text {
+    margin: 0px 8px;
+    display: inline-block;
+}
+
+.top-page-i {
+    font-size: 19px;
+}
+
+.top-page-icon {
+    float: right;
+}
+
+.icon {
+    margin: 0px 8px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.fa-search {
+    margin: 0 30px;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    background: url("../Images/bg1.jpg") no-repeat center center/cover;
+    background-origin: content-box;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 953px;
+    width: 100%;
+    background-color: black;
+}
