@@ -24,9 +24,10 @@
 
 .home-card {
     margin: 20px;
-    height: 315px;
+    height: 205px;
     width: 250px;
     margin: 0px 80px;
+    transform: translateY(200px);
 }
 
 .home-card-image {
@@ -62,7 +63,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    overflow: hidden;
+    width: 100vw;
     height: 60%;
+    box-sizing: border-box;
 }
 
+.home-card.down.scroll1 {
+    transition: transform 2s;
+    transform: translateY(0px);
+}
+
+.home-card.down.scroll2 {
+    transition: transform 2s;
+    transition-delay: .5s ;
+    transform: translateY(0px);
+}
+
+.home-card.down.scroll3 {
+    transition: transform 2s;
+    transition-delay: .5s ;
+    transform: translateY(0px);
+}
+
+.home-card-container.home-container {
+    overflow: visible;
+}
